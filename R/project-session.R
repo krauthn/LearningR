@@ -1,4 +1,5 @@
 source(here::here("R/package-loading.R"))
+
 #The here package uses a function called here() that makes it easier to manage file paths within an R Project
 #will 'source' a specific file
 
@@ -10,7 +11,6 @@ weight_kilos
 #functions:
 c("a", "b", "c") # character vector
 c(TRUE, FALSE)
-
 c(1, 2, 4)
 
 factor(c("high", "medium", "low"))
@@ -30,7 +30,8 @@ day_one
 false <- FALSE
 current_value <- 9
 
-# Spacing
+# Spacing'
+
 x[, 1]
 mean(x, na.rm = TRUE)
 height <- feet * 12 + inches
