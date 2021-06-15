@@ -4,13 +4,13 @@ This project...
 
 # Brief description of folder and file contents
 
-TODO: As project evolves, add brief description of what is inside the data, doc and R folders.
+This is practice code for the R course in June 2021
 
 The following folders contain:
 
-- `data/`:
-- `doc/`:
-- `R/`:
+- `data/`: -
+- `doc/`: -
+- `R/`: different code files
 
 # Installing project R package dependencies
 
