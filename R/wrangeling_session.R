@@ -22,3 +22,28 @@ select(NHANES, ends_with("Day"))
 #all coloumns containing Age
 select(NHANES, contains("AGE"))
 
+#for more info on helpers:
+?select_helpers
+
+#Save the selected coloums as a new dataset
+nhanes_small <- select(NHANES, Age, Gender, Height, Weight, BMI, Diabetes,
+                       DiabetesAge, PhysActiveDays, PhysActive, TotChol,
+                       BPSysAve, BPDiaAve, SmokeNow, Poverty)
+
+#view the data framw
+nhanes_small
+
+#renaming
+#rename all columns to snake case
+nhanes_small <- rename_with(nhanes_small,
+                            snakecase::to_snake_case)
+
+nhanes_small
+
+#renaming specific coloumns
+rename(nhanes_small, sex = gender) #obs not saved
+#with saving:
+nhanes_small <-rename(nhanes_small, sex = gender)
+
+
+
