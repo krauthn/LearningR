@@ -1,8 +1,8 @@
 ---
 title: "Reproducible documents"
-author: "Nathalie Krauth"
-date: "16/06/2021"
-output: html_document
+output:
+    html_document:
+        theme: sandstone
 ---
 
 ```{r setup, include=FALSE}

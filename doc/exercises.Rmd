@@ -47,3 +47,6 @@ knitr::kable(caption = "Diabetes BMI table.")
 ```
 
 
+```{r kitten-image, out.width="20%", out.height="50%", fig.cap="Kitten attacking flowers!"}
+knitr::include_graphics(here::here("/Users/hxv222/Desktop/kitten.jpg"))
+```
