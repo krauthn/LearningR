@@ -10,9 +10,10 @@ output: html_document
 # Intro
 
 This is a *cool* paper.
-# Methods and results
 
-## Analysis
+## Methods and results
+
+### Analysis
 
 This is how we did it
 
