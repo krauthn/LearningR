@@ -194,3 +194,6 @@ nhanes_small %>%
 
 #save data as an .rda file in the data folder
 usethis::use_data(nhanes_small, overwrite = TRUE)
+
+BW<- readr::read_csv(here::here("data/BW")
+
