@@ -56,5 +56,18 @@ nhanes_small %>%
     select(phys_active) %>%
     rename(physically_active=phys_active)
 
+nhanes_small %>%
+    select(tot_chol, bp_sys_ave,  poverty)
+
+nhanes_small %>%
+    rename(diabetes_diagnosis_age = diabetes_age)
+
+# rewrite with pipe: select(nhanes_small, bmi, contains("age"))
+nhanes_small %>%
+    select(bmi, contains("age"))
 
 
+#rewrite physical_activity <- select(nhanes_small, phys_active_days, phys_active) rename(physical_activity, days_phys_active = phys_active_days)
+nhanes_small %>%
+    select(phys_active_days, phys_active) %>%
+    rename(days_phys_active = phys_active_days)
