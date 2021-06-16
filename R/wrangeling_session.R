@@ -45,5 +45,16 @@ rename(nhanes_small, sex = gender) #obs not saved
 #with saving:
 nhanes_small <-rename(nhanes_small, sex = gender)
 
+# without the pipe operator
+colnames(nhanes_small)
+
+#with pipe Ctrl+Shift+M
+nhanes_small %>% colnames()
+
+#using the pipeoperator with more functions
+nhanes_small %>%
+    select(phys_active) %>%
+    rename(physically_active=phys_active)
+
 
 
